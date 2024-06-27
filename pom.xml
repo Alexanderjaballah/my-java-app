@@ -23,13 +23,11 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
                             <mainClass>com.example.App</mainClass> <!-- Adjust with your actual main class -->
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-
             <!-- Maven Assembly Plugin configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

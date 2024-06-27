@@ -14,7 +14,7 @@ EXPOSE 8080
 ARG JAR_FILE=target/my-java-app-1.0-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} my-java-app.jar
+ADD ${JAR_FILE} my-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/my-java-app.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","target/my-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar"]
